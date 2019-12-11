@@ -1,0 +1,11 @@
+.footer {
+  background-color: $color-grey-light-1;
+  padding: 1rem 3rem;
+  &__text {
+    text-align: center;
+  }
+
+  &__heart {
+    color: $color-heart;
+  }
+}
