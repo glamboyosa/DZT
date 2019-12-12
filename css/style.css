@@ -10,7 +10,8 @@ body {
   box-sizing: border-box;
   padding: 3rem;
   font-family: 'Shadows Into Light', cursive;
-  line-height: 1.5; }
+  line-height: 1.5;
+  overflow-x: hidden; }
 
 .heading__primary {
   font-size: 6rem; }
@@ -29,7 +30,8 @@ body {
       background-color: #ff7730; }
 
 .heading-secondary {
-  font-size: 4rem; }
+  font-size: 4rem;
+  margin-left: 1rem; }
   .heading-secondary__main {
     font-weight: 500;
     display: block; }
@@ -52,6 +54,17 @@ body {
   font-size: 3rem;
   font-weight: 400;
   text-align: center; }
+
+@media only screen and (max-width: 900px) {
+  .heading__primary {
+    font-size: 4rem; }
+    .heading__primary--sub {
+      transform: translateX(0); }
+  .heading-secondary {
+    font-size: 3rem;
+    margin-left: 1rem; }
+  .heading__tertiary {
+    font-size: 2.5rem; } }
 
 .u-center-text {
   margin: 0 auto; }
@@ -156,6 +169,8 @@ body {
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  .trade__center a:link {
+    font-size: 1.6rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
