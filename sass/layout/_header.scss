@@ -1,5 +1,6 @@
 .header {
     height: 90vh;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-white, 0.8)), to(rgba($color-white, 0.8)));
     background-image: linear-gradient(to right bottom, rgba($color-white, 0.8), rgba($color-white, 0.8));
     background-size: cover;
     position: relative;
@@ -18,7 +19,11 @@
             position: absolute;
             top: 0;
             right: 4rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
             list-style: none;
 
@@ -37,7 +42,10 @@
     }
 
     &__box {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         padding-top: 2.5rem;
 
@@ -84,11 +92,13 @@
 @media only screen and (max-width:900px) {
     .header {
         &__box {
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             margin: 0 auto;
             padding: 4rem;
 
             &--img {
+                -webkit-transform: translateX(-20rem);
                 transform: translateX(-20rem);
 
             }

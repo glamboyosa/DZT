@@ -9,6 +9,7 @@
 
     &--sub {
       display: block;
+      -webkit-transform: translateX(8rem);
       transform: translateX(8rem);
       font-weight: 700;
 
@@ -33,6 +34,7 @@
 
     &__sub {
       font-weight: 300;
+      -webkit-transform: translateX(-0.5rem);
       transform: translateX(-0.5rem);
 
       &--1 {
@@ -67,6 +69,7 @@
       font-size: 4rem;
 
       &--sub {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
       }
     }
